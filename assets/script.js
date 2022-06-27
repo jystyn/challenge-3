@@ -9,12 +9,17 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword () {
   //ask for password length between 8 and 128
-  var length = prompt('Choose a password length between 8 and 128 characters');
+  var length = prompt('Choose a password length between 8 and 128 characters.');
   
     //Validate password length is between 8 and 128
     if (length <8 || length > 128) {
-    alert('Please select a password length between 8 and 128');
-    prompt('Choose a password length between 8 and 128 characters');
+      alert('Please select a password length between 8 and 128 characters.');
+      return generatePassword();
+    }
+    //If a non number is chosen the user will be alerted and asked to enter a number
+    if (isNaN(length)) {
+      alert('You must choose a NUMBER between 8 and 128. Please try again.')
+      return generatePassword();
     }
 
     //convert value of length to an integer
@@ -31,7 +36,7 @@ function generatePassword () {
     alert('You must choose at least one character type, please click the button and try again');
     }
 
-  //string to save parts of password
+  //string to save character types to be used in password
   var passParts = '';
 
   //adding chosen characters to password string
