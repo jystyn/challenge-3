@@ -4,4 +4,5 @@ For this assignment we had to creat a password generator with a series of prompt
 
 ![Challenge-2 Screenshot 1](./assets/challenge-3-screenshot.png)
 
-![link to site](https://jystyn.github.io/challenge-3/)
+Link to site
+(https://jystyn.github.io/challenge-3/)
