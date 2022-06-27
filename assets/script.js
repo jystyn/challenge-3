@@ -33,7 +33,8 @@ function generatePassword () {
    
     //Validate that at least one character type was chosen
     if(chooseUppercase === false && chooseLowercase === false && chooseNumbers === false && chooseSpecialCharacters === false){
-    alert('You must choose at least one character type, please click the button and try again');
+    alert('You must choose at least one character type. Try again');
+    return generatePassword();
     }
 
   //string to save character types to be used in password
